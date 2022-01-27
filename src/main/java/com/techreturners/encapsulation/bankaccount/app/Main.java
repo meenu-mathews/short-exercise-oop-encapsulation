@@ -2,6 +2,7 @@ package com.techreturners.encapsulation.bankaccount.app;
 
 import com.techreturners.encapsulation.bankaccount.model.DodgyBankAccount;
 import com.techreturners.encapsulation.bankaccount.model.SecureBankAccount;
+import com.techreturners.encapsulation.bankaccount.model.WeatherReporter;
 
 public class Main {
 
@@ -62,6 +63,13 @@ public class Main {
         //mySecureBankAccount.accountBalance = 1000000;
         mySecureBankAccount.displayAccountBalance();
         System.out.println("😹 Well I guess that's secure!");
+
+        /*Weather Reporter*/
+        WeatherReporter weatherReporterObj2 = new WeatherReporter("California", 31);
+        System.out.println(weatherReporterObj2.printTempInFahrenheit());
+        WeatherReporter weatherReporterObj3 = new WeatherReporter("Cape Town", 24);
+        System.out.println(weatherReporterObj3.printTempInFahrenheit());
+
     }
 
 }
